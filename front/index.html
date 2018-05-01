@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Course Diary</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+<body id=bod>
+    <header class="grid-container">
+        <img class="grid-item" src="images/UopInsignia.jpg" height="150em">
+        <h1 class="grid-item">Lecture Diary</h1>
+        <div class="grid-item" style="text-align: right">
+            <div>
+                <input type="text" id="unitAdd" autofocus required placeholder="Add Unit">
+                <button id="unitButton">Add Unit</button>
+            </div>
+            <select id="unitSelect">
+                <option value="unit">Select Unit</option>
+            </select>
+            <div>
+                <input type="text" id="sessSearch" autofocus required placeholder="Search sessions">
+            </div>
+        </div>
+    </header>
+    <hr>
+    <article id="inputs" style="text-align: center"> 
+        <select id="weekSelect">
+            <option value="Select Week">Select Week</option>
+        </select>
+        <select id="typeSelect">
+            <option value="Type">Type</option>
+            <option value="Lecture">Lecture</option>
+            <option value="Tutorial">Tutorial</option>
+        </select>
+        <select id="coordSelect">
+            <option value="coord">Select Coordinator</option>
+        </select>
+        <textarea id="topicTA" required placeholder="Topic"></textarea>
+        <textarea id="descTA" required placeholder="Description"></textarea>
+        <textarea id="hmwkTA" required placeholder="Homework"></textarea>
+        <input id="dateInput" type="date" name="Date">
+        <button id="submit">Add new session!</button>
+    </article>
+    <hr>
+    <article id="outputs">
+
+    </article>
+    <script src="client.js"></script>
+</body>
+</html>
